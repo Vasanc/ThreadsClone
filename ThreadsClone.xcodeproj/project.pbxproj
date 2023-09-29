@@ -11,6 +11,10 @@
 		18210FAA2AC6FBEE0062BCFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18210FA92AC6FBEE0062BCFC /* ContentView.swift */; };
 		18210FAC2AC6FBEF0062BCFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18210FAB2AC6FBEF0062BCFC /* Assets.xcassets */; };
 		18210FAF2AC6FBEF0062BCFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18210FAE2AC6FBEF0062BCFC /* Preview Assets.xcassets */; };
+		18210FBF2AC700460062BCFC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18210FBE2AC700460062BCFC /* LoginView.swift */; };
+		18210FC12AC705B90062BCFC /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18210FC02AC705B90062BCFC /* RegistrationView.swift */; };
+		18210FC42AC707290062BCFC /* ThreadsTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18210FC32AC707290062BCFC /* ThreadsTextFieldModifier.swift */; };
+		18210FC62AC708540062BCFC /* ButtonFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18210FC52AC708540062BCFC /* ButtonFieldModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		18210FA92AC6FBEE0062BCFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		18210FAB2AC6FBEF0062BCFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18210FAE2AC6FBEF0062BCFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18210FBE2AC700460062BCFC /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		18210FC02AC705B90062BCFC /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		18210FC32AC707290062BCFC /* ThreadsTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsTextFieldModifier.swift; sourceTree = "<group>"; };
+		18210FC52AC708540062BCFC /* ButtonFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFieldModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,12 @@
 		18210FA62AC6FBEE0062BCFC /* ThreadsClone */ = {
 			isa = PBXGroup;
 			children = (
-				18210FA72AC6FBEE0062BCFC /* ThreadsCloneApp.swift */,
-				18210FA92AC6FBEE0062BCFC /* ContentView.swift */,
+				18210FBA2AC700080062BCFC /* Utility */,
+				18210FB92AC700030062BCFC /* Services */,
+				18210FB82AC6FFFF0062BCFC /* Model */,
+				18210FB72AC6FFF80062BCFC /* Extensions */,
+				18210FB62AC6FFF40062BCFC /* Core */,
+				18210FB52AC6FFE60062BCFC /* App */,
 				18210FAB2AC6FBEF0062BCFC /* Assets.xcassets */,
 				18210FAD2AC6FBEF0062BCFC /* Preview Content */,
 			);
@@ -65,6 +77,86 @@
 				18210FAE2AC6FBEF0062BCFC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18210FB52AC6FFE60062BCFC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				18210FA72AC6FBEE0062BCFC /* ThreadsCloneApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		18210FB62AC6FFF40062BCFC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				18210FBC2AC700290062BCFC /* Root */,
+				18210FBB2AC7001D0062BCFC /* Authentication */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		18210FB72AC6FFF80062BCFC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		18210FB82AC6FFFF0062BCFC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18210FB92AC700030062BCFC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		18210FBA2AC700080062BCFC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				18210FC22AC707120062BCFC /* View Modifiers */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		18210FBB2AC7001D0062BCFC /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				18210FBD2AC700340062BCFC /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		18210FBC2AC700290062BCFC /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				18210FA92AC6FBEE0062BCFC /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		18210FBD2AC700340062BCFC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18210FBE2AC700460062BCFC /* LoginView.swift */,
+				18210FC02AC705B90062BCFC /* RegistrationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18210FC22AC707120062BCFC /* View Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				18210FC32AC707290062BCFC /* ThreadsTextFieldModifier.swift */,
+				18210FC52AC708540062BCFC /* ButtonFieldModifier.swift */,
+			);
+			path = "View Modifiers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +229,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18210FBF2AC700460062BCFC /* LoginView.swift in Sources */,
 				18210FAA2AC6FBEE0062BCFC /* ContentView.swift in Sources */,
+				18210FC42AC707290062BCFC /* ThreadsTextFieldModifier.swift in Sources */,
+				18210FC62AC708540062BCFC /* ButtonFieldModifier.swift in Sources */,
 				18210FA82AC6FBEE0062BCFC /* ThreadsCloneApp.swift in Sources */,
+				18210FC12AC705B90062BCFC /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
